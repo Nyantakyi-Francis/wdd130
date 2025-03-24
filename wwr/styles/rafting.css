@@ -1,20 +1,13 @@
 /* Rafting Site Styles - rafting.css */
 
-/* Define Color Scheme Using CSS Variables */
 :root {
     --primary-color: #505033;
-    /* Deep Olive */
     --secondary-color: #264969;
-    /* Navy Blue */
     --accent-color: #cfcfb4;
-    /* Soft Beige */
     --background-color: #b4cde4;
-    /* Light Blue */
     --text-color: #333;
-    /* Dark Gray */
 }
 
-/* Global Styles */
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
@@ -23,6 +16,10 @@ body {
     padding: 0;
     max-width: 1200px;
     margin: auto;
+}
+
+header h1 {
+    color: gold;
 }
 
 h1,
@@ -35,25 +32,33 @@ p {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header with CSS Grid */
 header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
     background-color: var(--secondary-color);
     color: white;
-    text-align: center;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
     max-width: 100px;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -69,25 +74,12 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.7);
-    padding: 10px 20px;
-}
-
 .hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
     background: rgba(255, 255, 255, 0.7);
     padding: 10px;
     width: 50%;
@@ -99,39 +91,39 @@ nav a:hover {
     margin-left: 10px;
 }
 
-/* Sections */
-section {
-    padding: 20px;
-}
-
-section h2 {
-    margin-bottom: 10px;
-}
-
+/* Adventure Section */
 .adventure-gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .adventure-gallery img {
-    width: 18%;
-    margin: 1%;
+    width: 200px;
     border-radius: 10px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
     color: white;
     padding: 10px;
 }
 
-/* Remove underline from social media links */
-.sociallinks a {
-    text-decoration: none;
-    margin: 0 10px;
+.sociallinks {
+    display: flex;
+    gap: 10px;
 }
 
 .sociallinks img {

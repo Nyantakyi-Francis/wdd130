@@ -5,58 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting Adventures</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <!-- Header Section: Logo and Navigation -->
     <header>
         <img src="images/logo.jpg" alt="Whitewater Rafting Adventures Logo" class="logo">
+        <h1>Whitewater Rafting Adventures</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <div class="hero"
-            style="position: relative; background-image: url('images/background.jpg'); background-size: cover; background-position: center; width: 100%; height: 250px;">
-            <h1 style="position: absolute; top: 20px; left: 20px;">Whitewater Rafting Adventures</h1>
-            <article style="position: absolute; bottom: 20px; left: 20px; width: 50%;">
+        <div class="hero">
+            <article>
                 <h3>Experience the Thrill</h3>
-                <p>Lorem ipsum dolor sit amet ipsa numquam fugit!</p>
-                <img src="images/hero_image.jpg" alt="Rafting Adventure"
-                    style="float: right; width: 100px; height: auto;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="images/hero_image.jpg" alt="Rafting Adventure">
             </article>
         </div>
 
-        <!-- History Section -->
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis fugit veniam, nostrum quisquam repellat
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugit veniam, nostrum quisquam repellat
                 repellendus.</p>
         </section>
 
-        <!-- Adventure Section -->
-        <section>
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/image_1.jpg" alt="Rafting 1">
-            <img src="images/image_2.jpg" alt="Rafting 2">
-            <img src="images/image_3.jpg" alt="Rafting 3">
-            <img src="images/image_4.jpg" alt="Rafting 4">
-            <img src="images/image_5.jpg" alt="Rafting 5">
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/image_1.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image_2.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image_3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image_4.jpg" alt="Rapid Rush">
+                    <figcaption>Rapid Rush</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image_5.jpg" alt="Full Day Challenge">
+                    <figcaption>Full Day Challenge</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Whitewater Rafting Adventures. All rights reserved. NYANTAKYI FRANCIS</p>
         <nav class="sociallinks">
