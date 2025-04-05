@@ -242,3 +242,14 @@ input[type="checkbox"] {
         text-align: center;
     }
 }
+
+.wireframe-link {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.wireframe-link:hover {
+    color: #004f88;
+}
