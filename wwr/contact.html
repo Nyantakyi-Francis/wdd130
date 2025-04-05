@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Whitewater Rafting Adventures</title>
     <meta name="description"
-        content="Contact Whitewater Rafting Adventures for reservations, inquiries, or suggestions." />
-    <link rel="stylesheet" href="styles/rafting.css" />
+        content="Contact Whitewater Rafting Adventures for reservations, inquiries, or suggestions.">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Whitewater Rafting Adventures Logo" class="logo" />
+        <img src="images/logo.jpg" alt="Whitewater Rafting Adventures Logo" class="logo">
         <h1>Whitewater Rafting Adventures</h1>
         <nav>
             <ul>
@@ -36,8 +36,9 @@
             <div class="map-container">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3891119.835842629!2d-0.1769472!3d5.636096!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sgh!4v1743291471287!5m2!1sen!2sgh"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    style="width:100%; height:450px; border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
 
@@ -45,16 +46,16 @@
             <h3>Meet Our Team</h3>
             <div class="team-grid">
                 <div class="employee">
-                    <img src="images/employee1.jpeg" alt="John Doe - Tour Guide" />
-                    <p><strong>John Doe</strong><br />Tour Guide</p>
+                    <img src="images/employee1.jpeg" alt="John Doe - Tour Guide">
+                    <p><strong>John Doe</strong><br>Tour Guide</p>
                 </div>
                 <div class="employee">
-                    <img src="images/employee2.jpeg" alt="Jane Smith - Customer Support" />
-                    <p><strong>Jane Smith</strong><br />Customer Support</p>
+                    <img src="images/employee2.jpeg" alt="Jane Smith - Customer Support">
+                    <p><strong>Jane Smith</strong><br>Customer Support</p>
                 </div>
                 <div class="employee">
-                    <img src="images/employee3.jpeg" alt="Mike Johnson - Safety Instructor" />
-                    <p><strong>Mike Johnson</strong><br />Safety Instructor</p>
+                    <img src="images/employee3.jpeg" alt="Mike Johnson - Safety Instructor">
+                    <p><strong>Mike Johnson</strong><br>Safety Instructor</p>
                 </div>
             </div>
         </section>
@@ -63,26 +64,29 @@
             <h3>Contact Form</h3>
             <form action="submit_form.php" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" required>
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label for="inquiry"><input type="radio" id="inquiry" name="purpose" value="inquiry" /> General
-                        Inquiry</label>
-                    <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation" />
-                        Reservation Question</label>
-                    <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion" />
-                        Website Suggestion</label>
+                    <label for="inquiry">
+                        <input type="radio" id="inquiry" name="purpose" value="inquiry"> General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe" /> Subscribe me to the monthly newsletter
+                    <input type="checkbox" id="subscribe" name="subscribe"> Subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
